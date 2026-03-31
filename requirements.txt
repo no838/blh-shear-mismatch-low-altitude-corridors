@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+statsmodels
+scikit-learn
+xarray
+netCDF4
+lxml
+requests
+cartopy
+geopandas
+shapely
+pyproj
+fiona
