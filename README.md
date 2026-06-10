@@ -1,31 +1,31 @@
-# BLH-Shear Mismatch and Low-Altitude Corridor Decoupling
+# BLH-shear mismatch low-altitude corridors: Urban Climate release
 
-This repository contains code and reproducibility scaffolding for a cross-city analysis of boundary-layer height-shear mismatch, low-altitude corridor decoupling, observational validation, operational-endpoint linkage, and manuscript figure generation.
+This repository contains the derived data tables and portable scripts needed to
+reproduce the manuscript figures from figure-ready inputs.
 
-## Scope
+## Contents
 
-The repository supports:
+- `06_data_code_and_provenance/figure_source_data/`: source tables and scripts for Figures 1, 3 and 4.
+- `06_data_code_and_provenance/smii_core/tables/`: source tables for the SMII diagnostic and model benchmarks.
+- `06_data_code_and_provenance/paris_dwl_validation/tables/`: derived Paris Doppler wind lidar validation tables.
+- `06_data_code_and_provenance/scripts/build_urbanclimate_fig2_fig5_v1.py`: portable script for Figures 2 and 5.
+- `06_data_code_and_provenance/01_city_domain/`: city-domain and analysis-selection manifests.
 
-- low-altitude corridor dynamics analysis
-- boundary-layer event diagnostics
-- cross-city structural typology analysis
-- independent validation against public observations
-- operational-endpoint linkage
-- manuscript figure generation
+The release does not redistribute complete upstream ERA5 archives, complete raw
+Paris Doppler wind lidar files, credentials, local working directories or
+intermediate caches. Upstream public datasets retain their original licenses.
 
-## Repository layout
+## Quick check
 
-- `integrated_pipeline/`: top-level execution entry points
-- `workspace/`: path helpers and release-friendly workspace utilities
-- `core_analysis/`: main corridor and boundary-layer diagnostics
-- `figure_generation/`: manuscript and supplementary figure scripts
-- `upgrade/`: external outcome, independent validation, operational endpoint, and figure-recast modules
-- `manifests/`: release manifest and reproducibility notes
+```bash
+python scripts/check_release_integrity.py
+```
 
-## Data access
+## Rebuild figures
 
-This repository does not redistribute third-party raw datasets. Upstream public sources include ERA5, NOAA ISD, IGRA, BTS TranStats, public CAAC bulletins, and Hong Kong Observatory archives. Derived tables used in the manuscript can be regenerated from these sources with the provided workflow.
-
-## Reproducibility
-
-See `REPRODUCIBILITY.md` for environment setup, execution order, expected inputs, and output checkpoints.
+```bash
+python 06_data_code_and_provenance/figure_source_data/Fig1/scripts/build_fig01_urbanclimate.py
+python 06_data_code_and_provenance/figure_source_data/Fig3/scripts/build_fig03_urbanclimate.py
+python 06_data_code_and_provenance/figure_source_data/Fig4/scripts/build_fig04_urbanclimate.py
+python 06_data_code_and_provenance/scripts/build_urbanclimate_fig2_fig5_v1.py
+```

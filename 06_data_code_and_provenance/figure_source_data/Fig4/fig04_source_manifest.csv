@@ -1,0 +1,5 @@
+figure,artifact_type,relative_path,description
+Fig4,source_table,02_figures/Fig4/source_tables/per_city_typology_table.csv,13-city structural typology table
+Fig4,source_table,01_city_domain/analysis_city_selection_manifest.csv,"Reconstructed selection ledger connecting 42-city catalogue, 13-city main layer, and 11-city hotspot subset"
+Fig4,reproduction_script,02_figures/Fig4/scripts/build_fig04_urbanclimate.py,Bundle-local self-contained reproduction script
+Fig4,output,02_figures/Fig4/figure_output/Figure_4.png,Support-bundle reproduced raster output

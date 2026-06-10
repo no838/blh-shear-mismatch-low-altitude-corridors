@@ -1,0 +1,2 @@
+event_pair_m_agl,event_metric,event_threshold_quantile,n_event_centers,lead_mean_z_m12_to_m7,core_mean_z_m1_to_p1,lag_mean_z_p7_to_p12,core_minus_lead_z,core_minus_lag_z,allowed_claim,forbidden_claim
+100-300,shear_abs_100_300m,6.07061633440245,160,0.05213201505834362,0.9884557403024586,0.06657469448728306,0.936323725244115,0.9218810458151756,DWL-only high-shear composites provide observed vertical-profile support for event-chain structure.,This does not prove BLH causal closure or global universality.

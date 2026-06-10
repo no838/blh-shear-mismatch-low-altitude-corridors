@@ -1,0 +1,8 @@
+figure,artifact_type,relative_path,description
+Fig3,source_table,02_figures/Fig3/source_tables/hotspot_vs_nonhotspot_summary.csv,Hotspot versus non-hotspot summary table
+Fig3,source_table,02_figures/Fig3/source_tables/fig3_predictive_cv.csv,Predictive benchmark cross-validation table
+Fig3,source_table,02_figures/Fig3/source_tables/fig3_capture_curve.csv,Top-k hotspot capture curve table
+Fig3,source_table,02_figures/Fig3/source_tables/hotspot_enrichment_state_group.csv,Hotspot enrichment by state group
+Fig3,source_table,02_figures/Fig3/source_tables/hotspot_membership_table.csv,Preserved 11-city hotspot-membership table
+Fig3,reproduction_script,02_figures/Fig3/scripts/build_fig03_urbanclimate.py,Bundle-local self-contained reproduction script
+Fig3,output,02_figures/Fig3/figure_output/Figure_3.png,Support-bundle reproduced raster output

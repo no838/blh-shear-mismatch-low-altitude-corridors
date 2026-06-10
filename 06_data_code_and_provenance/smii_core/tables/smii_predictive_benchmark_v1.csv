@@ -1,0 +1,9 @@
+model,features,poly2,n,positive_n,auc_mean,auc_sd,ap_mean,ap_sd,cv_protocol
+Bulk wind intensity,wind_intensity_z,False,167,32,0.7065520282186948,0.11030014335752295,0.47539492844164466,0.140520691478542,20 repeats of 5-fold stratified CV; balanced logistic regression
+Shear only,shear_z,False,167,32,0.6406701940035273,0.09710444140824197,0.33037748653120474,0.1072773834318262,20 repeats of 5-fold stratified CV; balanced logistic regression
+Mixing deficit only,mixing_deficit_z,False,167,32,0.7471693121693123,0.09568817932499697,0.5005331401672082,0.13679685895288504,20 repeats of 5-fold stratified CV; balanced logistic regression
+Simple SMII scalar,smii_simple_z,False,167,32,0.576031746031746,0.10984643074397422,0.32624909414628184,0.11351562756631682,20 repeats of 5-fold stratified CV; balanced logistic regression
+SMII scalar,smii_z,False,167,32,0.7117283950617284,0.09050106921992525,0.4310960382535784,0.12567842558232437,20 repeats of 5-fold stratified CV; balanced logistic regression
+BLH + shear,blh_log_z;shear_z,False,167,32,0.761031746031746,0.10549262193841089,0.5544531648737373,0.14872788109615814,20 repeats of 5-fold stratified CV; balanced logistic regression
+BLH x shear (poly2),blh_log_z;shear_z,True,167,32,0.795405643738977,0.07380878578329193,0.5588627003220524,0.13095769554375447,20 repeats of 5-fold stratified CV; balanced logistic regression
+BLH x shear x gust (poly2),blh_log_z;shear_z;gust_z,True,167,32,0.8435097001763668,0.07009083508722712,0.588995872886118,0.1434076293161056,20 repeats of 5-fold stratified CV; balanced logistic regression
