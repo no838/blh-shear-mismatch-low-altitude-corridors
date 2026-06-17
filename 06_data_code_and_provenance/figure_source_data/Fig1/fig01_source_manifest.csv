@@ -1,4 +1,0 @@
-figure,artifact_type,relative_path,description
-Fig1,source_table,02_figures/Fig1/source_tables/regime_state_summary_table.csv,Regime-level occupancy and persistence diagnostic summary table
-Fig1,reproduction_script,02_figures/Fig1/scripts/build_fig01_urbanclimate.py,Bundle-local self-contained reproduction script
-Fig1,output,02_figures/Fig1/figure_output/Figure_1.png,Support-bundle reproduced raster output

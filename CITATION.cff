@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-title: "Derived data and code for boundary-layer depth and shear organize vertical wind-profile decoupling across urban agglomerations"
+title: "Data and code for urban boundary-layer vertical decoupling analysis"
 authors:
   - family-names: "Zhou"
     given-names: "Xi-Yin"
   - family-names: "Cao"
     given-names: "Chunyan"
-date-released: "2026-06-10"
+date-released: "2026-06-17"
 repository-code: "https://github.com/no838/blh-shear-mismatch-low-altitude-corridors"
-message: "Please cite the associated manuscript and upstream datasets."
+message: "Please cite the public release, the associated manuscript and the upstream datasets."
