@@ -9,8 +9,8 @@ required = [
     root / "data/figure_3/hotspot_membership_table.csv",
     root / "data/figure_4/city_typology_table.csv",
     root / "data/figure_5/paris_lidar_event_support_summary_600s.csv",
-    root / "figures/Figure_2_mechanism_diagnostic_v2.pdf",
-    root / "figures/Figure_5_paris_lidar_profile_evidence_v2.pdf",
+    root / "figures/Figure_2_mechanism_diagnostic.pdf",
+    root / "figures/Figure_5_paris_lidar_profile_evidence.pdf",
 ]
 missing = [str(p.relative_to(root)) for p in required if not p.exists()]
 if missing:

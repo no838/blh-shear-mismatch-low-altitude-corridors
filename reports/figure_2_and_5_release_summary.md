@@ -1,10 +1,10 @@
 # Release Fig. 2 and Fig. 5 Polish Summary v4
 
 {
-  "output_root": "<local_root>/\u4f4e\u7a7a\u7ecf\u6d4e/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v2/urban_boundary_layer_vertical_decoupling_release",
+  "output_root": "<local_root>/\u4f4e\u7a7a\u7ecf\u6d4e/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v3/urban_boundary_layer_vertical_decoupling_release",
   "figures": [
-    "<local_root>/\u4f4e\u7a7a\u7ecf\u6d4e/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v2/urban_boundary_layer_vertical_decoupling_release/figures/Figure_2_mechanism_diagnostic_v2.png",
-    "<local_root>/\u4f4e\u7a7a\u7ecf\u6d4e/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v2/urban_boundary_layer_vertical_decoupling_release/figures/Figure_5_paris_lidar_profile_evidence_v2.png"
+    "<local_root>/\u4f4e\u7a7a\u7ecf\u6d4e/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v3/urban_boundary_layer_vertical_decoupling_release/figures/Figure_2_mechanism_diagnostic.png",
+    "<local_root>/\u4f4e\u7a7a\u7ecf\u6d4e/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v3/urban_boundary_layer_vertical_decoupling_release/figures/Figure_5_paris_lidar_profile_evidence.png"
   ],
   "figure_contracts": {
     "Fig2": "A bounded shear-mixing imbalance diagnostic enriches amplified-decoupling hotspots, but the BLH-shear state-space benchmark remains the primary discriminator.",

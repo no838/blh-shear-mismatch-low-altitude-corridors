@@ -276,7 +276,7 @@ def build_fig2() -> tuple[Path, dict[str, object]]:
     axD.set_title("State-space model remains strongest", loc="left", pad=4)
     clean_axis(axD, grid_axis="x")
 
-    base = FIG_DIR / "Figure_2_mechanism_diagnostic_v2"
+    base = FIG_DIR / "Figure_2_mechanism_diagnostic"
     outputs = export_bundle(fig, base)
     preflight = overlap_report(fig)
     plt.close(fig)
@@ -288,7 +288,7 @@ def build_fig2() -> tuple[Path, dict[str, object]]:
         source_rows.append({"figure": "Fig2", "panel": "C", "item": label.replace("\n", " "), "value": val, "n": n, "uncertainty_sd": np.nan, "color": color})
     for label, auc, sd, color in b_rows:
         source_rows.append({"figure": "Fig2", "panel": "D", "item": label, "value": auc, "uncertainty_sd": sd, "color": color})
-    pd.DataFrame(source_rows).to_csv(TAB_DIR / "figure_2_mechanism_diagnostic_source_data_v2.csv", index=False)
+    pd.DataFrame(source_rows).to_csv(TAB_DIR / "figure_2_mechanism_diagnostic_source_data.csv", index=False)
 
     report = {
         "figure": "Fig. 2",
@@ -305,7 +305,7 @@ def build_fig2() -> tuple[Path, dict[str, object]]:
         "preflight": preflight,
         "notes": "No figure-level title is rendered inside the image; caption should carry Fig. 2 title.",
     }
-    (REP_DIR / "figure_2_mechanism_diagnostic_qa_v2.md").write_text(
+    (REP_DIR / "figure_2_mechanism_diagnostic_qa.md").write_text(
         "# Fig. 2 Release Figure QA v4\n\n" + json.dumps(report, indent=2), encoding="utf-8"
     )
     return base.with_suffix(".png"), report
@@ -451,7 +451,7 @@ def build_fig5() -> tuple[Path, dict[str, object]]:
     axins.text(0.04, 0.94, "placebo", transform=axins.transAxes, ha="left", va="top",
                fontsize=5.5, color=PALETTE["muted"])
 
-    base = FIG_DIR / "Figure_5_paris_lidar_profile_evidence_v2"
+    base = FIG_DIR / "Figure_5_paris_lidar_profile_evidence"
     outputs = export_bundle(fig, base)
     preflight = overlap_report(fig)
     plt.close(fig)
@@ -467,7 +467,7 @@ def build_fig5() -> tuple[Path, dict[str, object]]:
         source_rows.append({"figure": "Fig5", "panel": "D", "item": int(r["relative_hour"]),
                             "shear_abs_100_300m_z_mean": r["shear_abs_100_300m_z_mean"],
                             "shear_abs_100_300m_z_se": r["shear_abs_100_300m_z_se"]})
-    pd.DataFrame(source_rows).to_csv(TAB_DIR / "figure_5_paris_lidar_profile_evidence_source_data_v2.csv", index=False)
+    pd.DataFrame(source_rows).to_csv(TAB_DIR / "figure_5_paris_lidar_profile_evidence_source_data.csv", index=False)
 
     report = {
         "figure": "Fig. 5",
@@ -486,7 +486,7 @@ def build_fig5() -> tuple[Path, dict[str, object]]:
         "placebo_core_minus_lead_p95": p95,
         "notes": "ERA5 BLH alignment remains supplementary context because it does not close event-scale BLH mediation.",
     }
-    (REP_DIR / "figure_5_paris_lidar_profile_evidence_qa_v2.md").write_text(
+    (REP_DIR / "figure_5_paris_lidar_profile_evidence_qa.md").write_text(
         "# Fig. 5 Release Figure QA v4\n\n" + json.dumps(report, indent=2), encoding="utf-8"
     )
     return base.with_suffix(".png"), report
@@ -505,7 +505,7 @@ def main() -> None:
         },
         "submission_target": "Release / JGR mature submission package; figures exported as editable vector plus 600-dpi raster support.",
     }
-    (REP_DIR / "figure_2_and_5_release_summary_v2.md").write_text(
+    (REP_DIR / "figure_2_and_5_release_summary.md").write_text(
         "# Release Fig. 2 and Fig. 5 Polish Summary v4\n\n" + json.dumps(summary, indent=2), encoding="utf-8"
     )
     print(json.dumps(summary, indent=2))

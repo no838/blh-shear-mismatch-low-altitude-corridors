@@ -1,18 +1,18 @@
 # PUBLIC_RELEASE_AUDIT_REPORT
 
-- Generated: 2026-06-17T15:04:48
-- Release candidate root: `/Users/raism/低空经济/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v2/urban_boundary_layer_vertical_decoupling_release`
+- Generated: 2026-06-17T15:49:43
+- Release candidate root: `/Users/raism/低空经济/TOPJOURNAL_NC_MASTER_WORKSPACE_V1/public_release_v3/urban_boundary_layer_vertical_decoupling_release`
 - Public target: `both`
 
 ## Public metadata
 
-- public_title: `Data and code for vertical decoupling in urban boundary layers`
+- public_title: `Data and code for urban boundary-layer vertical decoupling analysis`
 - repository_name: `urban-boundary-layer-vertical-decoupling-release`
-- release_tag: `v2`
-- archive_name: `urban_boundary_layer_vertical_decoupling_release_v2.zip`
+- release_tag: `v3`
+- archive_name: `urban_boundary_layer_vertical_decoupling_release_v3.zip`
 - root_folder_name: `urban_boundary_layer_vertical_decoupling_release`
 - readme_title: `Data and code for urban boundary-layer vertical decoupling analysis`
-- zenodo_title: `Data and code for vertical decoupling in urban boundary layers`
+- zenodo_title: `Data and code for urban boundary-layer vertical decoupling analysis`
 - doi_title: ``
 
 ## Scope verdict: `PASS`
